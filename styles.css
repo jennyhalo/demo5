@@ -1,5 +1,9 @@
 body {
     background-image: url("pexels-deepu-b-iyer-40465.jpg"); alt: taustakuva sininen järvimaisema ;
-    background: size 10px 10px;
+    background-size:  10px 10px;
     
   }
+h1 {
+    border-style: solid;
+    border-width: 2px;
+}
