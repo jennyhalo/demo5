@@ -4,6 +4,6 @@ body {
     
   }
 h1 {
-    border-style: solid;
+    border-block-end-style: ;
     border-width: 2px;
 }
