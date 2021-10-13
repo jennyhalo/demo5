@@ -1,6 +1,10 @@
 body {
     background-image: url("pexels-deepu-b-iyer-40465.jpg");
     background-size: 1600px 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    }  
     
   }
 h1 {
@@ -10,21 +14,16 @@ h1 {
 
 p {
     margin: 2%;
-    background-color: rgb(169, 228, 208);
+    background-color: rgb(130, 153, 230);
     border-radius: 5px;
     padding: 15px;
 }
-{
+*{
     box-sizing: border-box;
   }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the header */
+
   header {
-    background-color: #666;
+    background-color: rgb(89, 118, 247);
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -33,25 +32,41 @@ p {
   
   /* Create two columns/boxes that floats next to each other */
   nav {
-    float: left;
-    width: 30%;
-    height: 300px; /* only for demonstration, should be removed */
-    background: #ccc;
+    float:inline-start;
+    width: 100%;
+    background: rgb(105, 80, 248);
     padding: 20px;
   }
   
-  /* Style the list inside the menu */
-  nav ul {
+  .nav ul {
     list-style-type: none;
+    text-align:center;
+    color: aliceblue;
     padding: 0;
   }
+    section {
+    float: left;
+    background:rgb(160, 153, 194);
+    padding: 30px;
+    width: 60%;
+    height: 400px;
+}
   
   article {
     float: left;
     padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+    width: 60%;
+    background-color: #696196;
+    height: 200px;
+    
+  }
+  aside {
+    float: right;
+    padding: 30px;
+    background:rgb(111, 179, 243);
+    width: 40% ;
+    height: 600px;
+    
   }
   
   /* Clear floats after the columns */
@@ -61,17 +76,11 @@ p {
     clear: both;
   }
   
-  /* Style the footer */
   footer {
-    background-color: #777;
-    padding: 10px;
+    background-color: rgb(15, 54, 112);
+    padding: 30px;
     text-align: center;
+    width: 100%;
     color: white;
   }
   
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
-    }
