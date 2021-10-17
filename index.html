@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="secondsheet" href="second.html">
     <link rel="layoutsheet" href="layout.html">
-    <title>Layout harjoitus</title>
+    <link rel="thirdsheet" href="third.html">
+    <title>Kalastustapoja</title>
     <meta charset="utf-8">
 </head>
 <body>
@@ -14,24 +15,33 @@
     <h1>Kalastus</h1>
 </header>
 <nav>
-    <a href="layout.html">Kalastusvälineitä</a>
-    <a href="https://arrowhouse.fi/2020/07/07/kalastuksen-historia/">Kalastuksen historia</a>
-    <a href="https://www.eraluvat.fi/kalastus/kalastusmaksut-ja-luvat.html">Kalastuslupa</a>
+    <a href="layout.html">Kalastusvälineitä</a> |
+    <a href="third.html">Kalastusopas</a> |
+    <a href="https://arrowhouse.fi/2020/07/07/kalastuksen-historia/">Kalastuksen historia</a> |
+    <a href="https://www.eraluvat.fi/kalastus/kalastusmaksut-ja-luvat.html">Kalastuslupa</a> 
 </nav>
-    <section>
+<section>
+    <article id="article5">
         <h2>Kalastustapoja</h2>
         <figure>
             <img src="pexels-gaspar-zaldo-6738876.jpg" alt="kuva kalastusvälineistä " height="250" />
             <figcaption>Kuva miehestä ja kalastusvälineistä</figcaption>
         </figure>
-    </section>
-        <aside>tähän tulee tekstiä</aside>
-    <article>
-                <label for="file">tietämyksesi kalastuksesta:</label>
-                <progress id="file" max="100" value="30"> 30% </progress>
+    </article>
+    <aside id="aside1">
+        <h3>Tietoa kalastustavoista</h3>
+    </aside>
+    <article id="article4">
+                <label>tietämyksesi kalastuksesta:</label>
+                <progress max="100" value="30"> 30% </progress>
         <p>Kalastustapoja on monenlaisia, yleisimpiä ovat heittokalastus virvelillä 
             ja talvella pilkkiminen. Kalastus on kiva harrastus. Suomessa pitää hankkia kalastuslupa 
             jos haluaa kalastaa muulla kuin ongella.</p>
     </article>
-        <footer>Yhteystiedot</footer>
+</section>
+        <footer>
+            <address>
+                <p>Copyright &#169; Jenny-Carolina Halonen</p>
+            </address>
+        </footer>
 </Body>

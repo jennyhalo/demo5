@@ -4,7 +4,8 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="secondsheet" href="index.html">
-    <title>demo5 harjoitus</title>
+    <link rel="firstsheet" href="index.html">
+    <title>Layout harjoitus</title>
     <meta charset="utf-8">
 </head>
 <body>
@@ -15,20 +16,24 @@
         </div>
     </header>
     <nav>
-        <a href="index.html">Kalastustapoja</a>
-        <a href="https://arrowhouse.fi/2020/07/07/kalastuksen-historia/">Kalastuksen historia</a>
-        <a href="https://www.eraluvat.fi/kalastus/kalastusmaksut-ja-luvat.html">Kalastuslupa</a>
+        <a href="index.html">Kalastustapoja</a> |
+        <a href="third.html">Kalastusopas</a> |
+        <a href="https://arrowhouse.fi/2020/07/07/kalastuksen-historia/">Kalastuksen historia</a> |
+        <a href="https://www.eraluvat.fi/kalastus/kalastusmaksut-ja-luvat.html">Kalastuslupa</a> 
     </nav>
         <section>
-            <figure>
-            <img src="pexels-cottonbro-4822293.jpg" alt="kuva kalastusvälineistä " height="250" />
-            <figcaption>Kuva miehestä ja kalastusvälineistä</figcaption>
-            </figure>
-            <label for="file">tietämyksesi kalastuksesta:</label>
+            <article id="article3">
+                <h2>Kalastusvälineet</h2>
+                <figure>
+                    <img src="pexels-cottonbro-4822293.jpg" alt="kuva kalastusvälineistä " height="250" />
+                    <figcaption>Kuva miehestä ja kalastusvälineistä</figcaption>
+                </figure>
+                <label for="file">tietämyksesi kalastuksesta:</label>
 
-            <progress id="file" max="100" value="66"> 66% </progress>
-        </section>
-        <aside>
+                <progress max="100" value="66"> 66% </progress>
+            </article>
+        <aside id="aside1">
+            <h3>Tietoa kalastusvälineistä</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisci elit, 
             sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
@@ -57,7 +62,7 @@
                   officia deserunt mollit anim id est laborum.
             </p>
             </aside>
-    <article>       
+    <article id="article2">       
     <h2>Kalastusvälineitä</h2>
         <ol>
             <li>onki</li>
@@ -68,7 +73,13 @@
             <li>koukku</li>
         </ul>
     </article> 
+
+            </section>
     
-    <footer>Yhteystiedot</footer>
+    <footer>
+        <address>
+            <p>Copyright &#169; Jenny-Carolina Halonen</p>
+        </address>
+    </footer>
 </Body>
   
