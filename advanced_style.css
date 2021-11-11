@@ -18,6 +18,7 @@ h1 {
 }
 a:link {
   color: black;
+  padding-top: 10px;
 }
 a:hover {
   color: red;
@@ -29,6 +30,7 @@ a:hover {
     color: white;}
   a:link {
     color: white;
+    padding-top: 10px;
     }
   a:hover {
     color: red;
