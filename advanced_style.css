@@ -1,0 +1,36 @@
+h1 {
+  border-style: solid;
+  text-shadow: 2px 2px blueviolet;
+  display: inline-block;
+  padding: 10px;
+}
+#esimerkki1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  display: inline-block;
+}
+#taustakuva {
+  background-image: url("pexels-cottonbro-4822293.jpg");
+  background-size: cover;
+  padding: 200px;
+}
+a:link {
+  color: black;
+}
+a:hover {
+  color: red;
+  transition: 3s;
+}
+@media screen and (max-width: 800px) {
+  body {
+    background-color: black;
+    color: white;}
+  a:link {
+    color: white;
+    }
+  a:hover {
+    color: red;
+    transition: 3s;
+    }
+  }
