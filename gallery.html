@@ -1,73 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Suomikalastus Galleria</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Galleria/Suomikalastus.fi</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="suomikalastus.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
- </head>
+</head>
 <body>
-  <Header>
-    <div class="row">
-    <div class="col-sm-4">
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-    </div>
-    <div class="col-sm-4">
-      <img src="Suomikalastus.fi_logo.png" class="img-fluid mx-auto d-block" alt="suomikalastus.fi logo" height="150" width="150" >
-      <nav class="navbar navbar-expand-sm justify-content-center">
-      <ul class="navbar-nav">
-        <li><a href="index.html" class="nav-link active">Koti</a></li>
-        <li><a href="gallery.html" class="nav-link active">Galleria</a></li>
-        <li><a href="stories.html" class="nav-link active">Tarinoita</a></li>
-        <li><a href="contacts.html" class="nav-link active">Yhteystiedot</a></li>
-      </ul>
+<Header>
+      <nav class="container-fluid navbar navbar-expand-sm grad">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stories.html">Tarinoita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Yhteystiedot</a>
+            </li>
+        <li style="float:right"><div class="stars">
+          <form action="https://www.w3schools.com/action_page.php">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form></div></li>
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+      </li>
+      <li><a href="mailto:jenny.halonen@student.laurea.fi"><i class="fa fa-envelope" style="font-size:36px"></i></a>
+      </li>
+    </ul>
       </nav>
-  </div>
-    <div class="col-sm-4 text-end">
-    <ion-icon name="star-outline"></ion-icon>
-    <ion-icon name="star-outline"></ion-icon>
-    <ion-icon name="star-outline"></ion-icon>
-    <ion-icon name="menu"></ion-icon>
+        <div class="container-fluid">
+          <img src="Suomikalastus.fi_logo.png" class="img-fluid mx-auto d-block justify-content-center" alt="suomikalastus.fi logo" height="150" width="150" >
+      </div>
+</Header>
+    <hr>
+  <main class="row">
+    <div class="col-sm-4 gallery">
+      <a href="kalastusmuodot.html">
+        <img src="kalastusmuoto1.jpg" alt="Kuva kalastusverkosta" width="400" height="400">
+      </a>
+      <div class="desc">
+        <h3>Kalastusmuodot</h3>
+      </div>
     </div>
-  </div>
-  </Header>
-  <hr>
-  <main>
-    <div class="row">
-      <div class="col-sm-4"><a href="kalastusmuodot.html"><img src="kalastusmuoto1.jpg" class="mx-auto d-block" alt="kuva verkkokalastuksesta" width="400" height="400"></a><a href="kalastusmuodot.html"><h2>Kalastusmuodot</h2></a></div> 
-      <div class="col-sm-4"><a href="vieheet.html"><img src="vieheet.jpg" class="mx-auto d-block" alt="kuva vieheistä" width="400" height="400"></a><a href="vieheet.html"><h2>Vieheet</h2></a></div>
-      <div class="col-sm-4"><a href="kalastusvälineet.html"><img src="kalastusvälineet.jpg" class="mx-auto d-block" alt="kuva kalastusvavoista" width="400" height="400"></a><a href="kalastusvälineet.html"><h2>Kalastusvälineet</h2></a></div>
-      <div class="col-sm-4"><a href="https://kalastusluvat.kalapaikka.net/tarvittavat-kalastusluvat/"><img src="kalastuslupa.jpg" class="mx-auto d-block" alt="no fishing kuva" width="400" height="400"></a><a href="https://kalastusluvat.kalapaikka.net/tarvittavat-kalastusluvat/"><h2>Kalastuslupa</h2></a></div> 
-      <div class="col-sm-4"><a href="https://www.finlex.fi/fi/laki/ajantasa/2015/20150379"><img src="kalastuslaki.jpg" class="mx-auto d-block" alt="kuva nuijasta" width="400" height="400"></a><a href="https://www.finlex.fi/fi/laki/ajantasa/2015/20150379"><h2>Kalastuslaki</h2></a></div>
-      <div class="col-sm-4"><a href="https://www.kalastusoppaat.fi/"><img src="Kalastusopas.jpg" class="mx-auto d-block" alt="kuva miehistä kalastamassa" width="400" height="400"></a><a href="https://www.kalastusoppaat.fi/"><h2>Kalastusopas</h2></a></div>
+    
+    <div class="col-sm-4 gallery">
+      <a href="vieheet.html">
+        <img src="vieheet.jpg" alt="Kuva viehelaatikosta" width="400" height="400">
+      </a>
+      <div class="desc"><h3>Vieheet</h3></div>
+    </div>
+    
+    <div class="col-sm-4 gallery">
+      <a href="kalastusvälineet.html">
+        <img src="kalastusvälineet.jpg" alt="Kuva kalastusvälineistä" width="400" height="400">
+      </a>
+      <div class="desc"><h3>Kalastusvälineet</h3></div>
+    </div>
+    
+    <div class="col-sm-4 gallery">
+      <a href="https://kalastusluvat.kalapaikka.net/tarvittavat-kalastusluvat/">
+        <img src="kalastuslupa.jpg" alt="Kyltti No fishing" width="400" height="400">
+      </a>
+      <div class="desc"><h3>Kalastuslupa</h3></div>
+    </div>
+
+    <div class="col-sm-4 gallery">
+      <a href="https://www.finlex.fi/fi/laki/ajantasa/2015/20150379">
+        <img src="kalastuslaki.jpg" alt="Kuva nuijasta" width="400" height="400">
+      </a>
+      <div class="desc"><h3>Kalastuslaki</h3></div>
+    </div>
+
+    <div class="col-sm-4 gallery">
+      <a href="https://www.kalastusoppaat.fi/">
+        <img src="Kalastusopas.jpg" alt="Perhokalastus kuva" width="400" height="400">
+      </a>
+      <div class="desc"><h3>Kalastusopas</h3></div>
     </div>
     <br>
     <br>
   </main>
   <hr>
-  <footer class="row">
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4 text-center"><address><!-- Auto Updating Copyright Script created with Rapid Purple Webmaster Tools (http://rapidpurple.com). -->
-      <script language="JavaScript">
-    
-      function y2k(number) { return (number < 1000) ? number + 1900 : number; }
-      var today = new Date();
-      var year = y2k(today.getYear());
-      document.write('© '+year+' Jenny-Carolina Halonen - All Rights Reserved');
-    
-      </script></address></div>
-    <div class="col-sm-4 text-end">
-  <ion-icon name="logo-facebook"></ion-icon>
-  <ion-icon name="logo-tumblr"></ion-icon>
-  <ion-icon name="mail-outline"></ion-icon>
-</div>
+  <footer class="container-fluid p-3 grad">
+    <!-- Auto Updating Copyright Script created with Rapid Purple Webmaster Tools (http://rapidpurple.com). -->
+      <script>
+        function y2k(number) { return (number < 1000) ? number + 1900 : number; }
+        var today = new Date();
+        var year = y2k(today.getYear());
+        document.write('© '+year+' Jenny-Carolina Halonen - All Rights Reserved');
+      </script>
 </footer>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+  </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</Body>
 </html>

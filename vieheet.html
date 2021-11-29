@@ -1,159 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vieheet</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vieheet/Suomikalastus.fi</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="suomikalastus.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
- </head>
+</head>
 <body>
-    <Header>
-        <div class="row">
-        <div class="col-sm-4">
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
-          </form>
-        </div>
-        <div class="col-sm-4">
-          <img src="Suomikalastus.fi_logo.png" class="img-fluid mx-auto d-block" alt="suomikalastus.fi logo" height="150" width="150" >
-          <nav class="navbar navbar-expand-sm justify-content-center">
+<Header>
+      <nav class="container-fluid navbar navbar-expand-sm grad">
           <ul class="navbar-nav">
-            <li><a href="index.html" class="nav-link active">Koti</a></li>
-            <li><a href="gallery.html" class="nav-link active">Galleria</a></li>
-            <li><a href="stories.html" class="nav-link active">Tarinoita</a></li>
-            <li><a href="contacts.html" class="nav-link active">Yhteystiedot</a></li>
-          </ul>
-          </nav>
-      </div>
-        <div class="col-sm-4 text-end">
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="menu"></ion-icon>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stories.html">Tarinoita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Yhteystiedot</a>
+            </li>
+        <li style="float:right"><div class="stars">
+          <form action="https://www.w3schools.com/action_page.php">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form></div></li>
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+      </li>
+      <li><a href="mailto:jenny.halonen@student.laurea.fi"><i class="fa fa-envelope" style="font-size:36px"></i></a>
+      </li>
+    </ul>
       </nav>
-    </Header>
+        <div class="container-fluid">
+          <img src="Suomikalastus.fi_logo.png" class="img-fluid mx-auto d-block justify-content-center" alt="suomikalastus.fi logo" height="150" width="150" >
+      </div>
+</Header>
       <hr>
       <div class="row">
-        <div class="side">
-          <h3 class="mt-4">Vieheet</h3>
-          <ul class="nav nav-pills flex-column">
+        <div class="side grad1">
+          <h2>Vieheet</h2>
+          <ul class="nav pill-nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Uistimet</a>
+              <a class="nav-link" href="#uistimet">Uistimet</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lusikkauistin</a>
+              <a class="nav-link" href="#lusikka">Lusikkauistin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lippauistin</a>
+              <a class="nav-link" href="#lippa">Lippauistin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vaappu-uistin</a>
+              <a class="nav-link" href="#vaappu">Vaappu-uistin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ruohosuojattu-uistin</a>
+              <a class="nav-link" href="#ruohouistin">Ruohosuojattu-uistin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jigi</a>
+              <a class="nav-link" href="#jigi">Jigi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Perho</a>
+              <a class="nav-link" href="#perho">Perho</a>
             </li>
           </ul>
+          <div class="box">
+            <div class="item1"><img src="mainoskuva3.jpeg" alt="myydään mainostilaa" class="imagepad">
+            </div>
+            <div class="item2"><img src="mainoskuva2.jpeg" alt="myydään mainostilaa" class="imagepad">
+        </div>
+        </div>
       </div> 
         <div class="main">
           <button onclick="topFunction()" id="myBtn" title="Palaa alkuun">Palaa Alkuun</button>
           <h2>Vieheet</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="vieheet.jpg" alt="kuva vieheistä" width="400" height="300">
-          <p>Some text..</p>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="vieheet.jpg" alt="kuva vieheistä" width="470" height="400">
+          <img src="vieheitä.jpeg" alt="kuva vieheistä" width="400" height="400">
+          <h4>Yleinen kuvaus vieheistä</h4>
           <p>Vieheet ovat kalastuksessa käytettäviä esineitä, jotka toimivat yleensä vavan päähän laitettavana syöttinä, jonka tarkoitus on herättää kalan saalistusvietti. Vieheitä on monen muotoisia, kokoisia ja värisiä, ja niissä on yleensä yksi tai kolmipäinen koukku. Olemme listanneet tälle sivustolle muutamia tunnetuimpia esimerkkejä vieheistä.</p>
           <br>
-          <h2>Uistimet</h2>
-          <h5>Title description, Sep 2, 2017</h5>
+          <h2 id="uistimet">Uistimet</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
           <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
+          <h4>Kuvaus uistimista</h4>
           <p>Uistin on kalastuksessa käytettävä väline, jota käytetään heittokalastuksessa ja vetouistelussa, mutta voi käyttää myös pilkkimiseen. Uistin muodostuu rungosta ja koukusta, joita voi olla yksi tai useampi. Uistintyyppejä on useita erilaisia, joista yleisempiä ovat vaaput, lusikat, jigit ja lipat. Uistimen runko herättää saaliin kiinnostuksen ulkomuodollaan ja liikkeellään, uistin voi muistuttaa pientä kalaa, joka kimaltaa liikehtiessään aidon kalan tavoin ja herättää huomion.</p>
-          <h2>Lusikkauistin</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="lusikka">Lusikkauistin</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="lusikkauistin.jpg" alt="kuva lusikkauistimesta" width="400" height="400">
+          <img src="lusikkauistin.jpeg" alt="kuva lusikkauistimesta" width="400" height="400">
+          <h4>Lusikkauistimen kuvaus</h4>
           <p>Lusikkauistin on saanut nimensä lusikkaa muistuttavan kuperan muotonsa takia, ja alkuperästään, jossa lusikkamuottia käytettiin tämän uistimen valmistukseen. Lusikkauistin tehdään perinteisesti metallista, kuten messingistä, kuparista tai uushopeasta.</p>
-          <h2>Lippauistin</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
-          <p>Lippauistimessa on nopeasti pyörivä lehtimäinen osa, ja sen perässä uiskentelevan pikkukalan näköinen osa ja koukku. Tämä viehe aiheuttaa liikkeellään värähtelyä vedessä, jonka tarkoitus on herättää petokalojen huomio. Tästä viehemallista löytyy monenlaisia versioita eri liikkeissä.</p>
-          <h2>Vaappu-uistin</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="lippa">Lippauistin</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="Lottolippa.jpeg" alt="kuva lotto-lipasta" width="400" height="400">
+          <h4>Lippa-uistimen kuvaus</h4>
+          <p>Lippa-uistimessa on nopeasti pyörivä lehtimäinen osa, ja sen perässä uiskentelevan pikkukalan näköinen osa ja koukku. Tämä viehe aiheuttaa liikkeellään värähtelyä vedessä, jonka tarkoitus on herättää petokalojen huomio. Tästä viehemallista löytyy monenlaisia versioita eri liikkeissä.</p>
+          <h2 id="vaappu">Vaappu-uistin</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="Vaappu-uistin.jpeg" alt="kuva Vaappu-uistimesta" width="400" height="400">
+          <img src="Koskivaappu.jpeg" alt="kuva Vaappu-uistimesta" width="400" height="400">
+          <h4>Vaappu-uistimen kuvaus</h4>
           <p>Perinteisesti kalaa muistuttava viehe, jonka kärjessä on muovinen tai metallinen lippa, jonka koko määrittää vaapun uintisyvyyden. Vaapussa voi olla koukut vaapun keski- sekä peräosassa.</p>
-          <h2>Ruohosuojattu-uistin</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="ruohouistin">Ruohosuojattu-uistin</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="ruohosuojattu-uistin.PNG" alt="kuva ruohosuojatusta uistimesta" width="500" height="400">
+          <h4>Ruohosuojatun uistimen kuvaus</h4>
           <p>Tämä uistintyyppi on suunniteltu toimimaan vesikasvillisuuden seassa, koska siinä on metalliviiksiä uistimessa ja koukussa, joiden tehtävä on ohjata vesikasvillisuus pois uistimen tieltä ja estää niihin tarttuminen. Kala pystyy tarttumaan koukkuun näistä metalliviiksistä huolimatta, mutta se voi olla hieman hankalampaa. Tietyt petokalat kuten esimerkiksi hauki, viihtyy vesikasvien kuten kaislojen ja lumpeiden suojassa. Tämä viehe mahdollistaa myös kalastuksen hankalissa paikoissa.</p>
-          <h2>Jigi</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="jigi">Jigi</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="Jigi.jpeg" alt="kuva jigistä" width="400" height="400">
+          <img src="jigejä.jpeg" alt="kuva kahdesta jigistä" width="400" height="400">
+          <h4>Kuvaus jigistä</h4>
           <p>Jigi eroaa muista uistimista pehmeällä matoa/toukkaa muistuttavalla ulkomuodollaan, ja ylöspäin osoittavalla koukullaan, jolla estetään pohjaan kiinnijääminen. Jigillä kalastus vaatii yleensä omanlaista uittamistyyliä kelan ja vavan liikettä säätämällä.</p>
-          <h2>Perho</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="kalastusvieheet.jpg" alt="kuva vieheistä" width="400" height="400">
-          <p>Some text..</p>
-          <p>Perhokalastuksessa käytettävää syöttiä kutsutaan perhoksi, se on kevyt syötti, joka imitoi siivekästä hyönteistä ulkomuodollaan, ja on monesti tehty linnunsulista.</p>
+          <h2 id="perho">Perho</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="perhouistin.jpeg" alt="kuva perhosta" width="400" height="400">
+          <h4>Kuvaus perhosta</h4>
+          <p>Perhokalastuksessa käytettävää syöttiä kutsutaan perhoksi, se on kevyt syötti, joka imitoi siivekästä hyönteistä ulkomuodollaan, ja se voi olla tehty langoista tai vaikka linnunsulista.</p>
         </div>
       </div>
           <div class="row">
             <div class="col-sm-12"></div>
           </div>
-      </div>
       <hr>
-      <footer class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4 text-center"><address><!-- Auto Updating Copyright Script created with Rapid Purple Webmaster Tools (http://rapidpurple.com). -->
-          <script language="JavaScript">
-          
-          function y2k(number) { return (number < 1000) ? number + 1900 : number; }
-          var today = new Date();
-          var year = y2k(today.getYear());
-          document.write('© '+year+' Jenny-Carolina Halonen - All Rights Reserved');
-          
-          </script></address></div>
-        <div class="col-sm-4 text-end">
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-tumblr"></ion-icon>
-      <ion-icon name="mail-outline"></ion-icon>
-    </div>
+      <footer class="container-fluid p-3 grad">
+        <!-- Auto Updating Copyright Script created with Rapid Purple Webmaster Tools (http://rapidpurple.com). -->
+          <script>
+            function y2k(number) { return (number < 1000) ? number + 1900 : number; }
+            var today = new Date();
+            var year = y2k(today.getYear());
+            document.write('© '+year+' Jenny-Carolina Halonen - All Rights Reserved');
+          </script>
     </footer>
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
         }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</Body>
-</html>
-  
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </Body>
+    </html>

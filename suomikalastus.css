@@ -3,31 +3,20 @@ body {
   margin-left: auto;
   margin-right: auto; 
   padding-top: 30px;
-  font-family: "Lato", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navbar-nav {
   font-size: 25px;
 }
-#floatright {
-  float: right;
 
-}
-#floatleft {
-  float: left;
-}
-ion-icon {
-  font-size: 45px;
-}
-p {
-  padding-top: 15px;
-}
 h2 {
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 h4 {
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 img {
   padding-bottom: 20px;
@@ -53,7 +42,7 @@ main {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #f1f1f1;
+  background-color: #a1f7fa;
   padding: 20px;
 }
 
@@ -64,19 +53,32 @@ main {
   background-color: white;
   padding: 20px;
 }
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-.rotate180 {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+/* unvisited link */
+.side a:link {
+  color: rgb(1, 4, 46);
+  font-size: 20px;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(89, 0, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(0, 17, 255);
+  transition: width 3s;
+}
+
+/* selected link */
+a:active {
+  color: rgb(119, 0, 255);
+  transition: 3s;
 }
 .centered {
   position: absolute;
@@ -99,61 +101,61 @@ main {
   padding: 15px;
   border-radius: 4px;
 }
-
+.box {
+  position: static;
+}
 #myBtn:hover {
-  background-color: rgb(243, 9, 9);
+  background-color: rgb(32, 150, 22);
 }
 /* Add a black background color to the top navigation */
-.topnav {
-  background-color: rgb(51, 110, 199);
-  overflow: hidden;
-  padding: 10px;
+.grad {
+  background-color: blue;
+  background-image: linear-gradient(to right,rgb(0, 102, 255)  , rgb(8, 124, 109));
+  color: white;
+}
+.grad1 {
+  background-color: rgb(147, 189, 252);
+  background-image: linear-gradient( rgb(133, 178, 245)  , rgb(8, 124, 109));
+}
+.navbar {
+  padding: 15px;
 }
 
+
 /* Style the links inside the navigation bar */
-.topnav a {
+.navbar a {
   float: left;
   color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
 }
-
 /* Change the color of links on hover */
-.topnav a:hover {
+.navbar a:hover {
   background-color: rgb(68, 204, 238);
   color: black;
 }
 
-/* Add a color to the active/current link */
-.topnav a.active {
+/* color to the active/current link */
+.navbar a.active {
   background-color: #04AA6D;
   color: white;
+  transition: 3s;
 }
-.checked {
-  color: orange;
-}
-li {
-  display: inline;
-  padding-top: 10px;
-  padding: 4px;
-}
-.search-container {
-  padding-top: 5px;
-}
+/* styling for stars */
 div.stars {
-    width: 270px;
-    display: inline-block;
-  }
+  display: flex;
+  padding-left: 550px;
+}
 input.star { display: none; }
  
 label.star {
-  float: right;
+  float:inline-end;
   font-size: 36px;
   color: #444;
   transition: all .2s;
   padding-right: 10px;
+  padding-top: 10px;
 }
  
 input.star:checked ~ label.star:before {
@@ -175,7 +177,102 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
-i {
-  padding-top: 10px;
+footer {
+  text-align: center;
+  padding: 30px;
 }
 
+.pill-nav a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: rgb(14, 183, 189);
+  color: rgb(0, 0, 0);
+}
+/* styling for gallery page */
+div.gallery {
+  margin: none;
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 2px solid rgb(1, 39, 255);
+}
+
+div.gallery img {
+ width: 100%;
+ max-height: 400px;
+ min-height: 400px;
+ position: relative;
+ left: 10px;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+#roundpic {
+  border-radius: 50%;
+}
+#gmap_canvas {
+  width: 900px;
+  height: 400px;
+}
+.mapouter {
+  position: relative;
+  text-align: right; 
+  height: 400px;
+  width: 900px;
+}
+.gmap_canvas {
+  overflow: hidden; 
+  background: none!important;
+  height: 400px;
+  width: 900px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+video {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+}

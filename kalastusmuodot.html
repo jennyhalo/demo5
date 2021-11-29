@@ -1,169 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kalastusmuodot</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Kalastusmuodot/Suomikalastus.fi</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="suomikalastus.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
- </head>
+</head>
 <body>
-    <Header>
-        <div class="row">
-        <div class="col-sm-4">
-          <form class="d-flex">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
-          </form>
-        </div>
-        <div class="col-sm-4">
-          <img src="Suomikalastus.fi_logo.png" class="img-fluid mx-auto d-block" alt="suomikalastus.fi logo" height="150" width="150" >
-          <nav class="navbar navbar-expand-sm justify-content-center">
+<Header>
+      <nav class="container-fluid navbar navbar-expand-sm grad">
           <ul class="navbar-nav">
-            <li><a href="index.html" class="nav-link active">Koti</a></li>
-            <li><a href="gallery.html" class="nav-link active">Galleria</a></li>
-            <li><a href="stories.html" class="nav-link active">Tarinoita</a></li>
-            <li><a href="contacts.html" class="nav-link active">Yhteystiedot</a></li>
-          </ul>
-          </nav>
-      </div>
-        <div class="col-sm-4 text-end">
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="star-outline"></ion-icon>
-        <ion-icon name="menu"></ion-icon>
-        </div>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Etusivu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Galleria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stories.html">Tarinoita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Yhteystiedot</a>
+            </li>
+        <li style="float:right"><div class="stars">
+          <form action="https://www.w3schools.com/action_page.php">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form></div></li>
+      <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+      </li>
+      <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+      </li>
+      <li><a href="mailto:jenny.halonen@student.laurea.fi"><i class="fa fa-envelope" style="font-size:36px"></i></a>
+      </li>
+    </ul>
       </nav>
-    </Header>
+        <div class="container-fluid">
+          <img src="Suomikalastus.fi_logo.png" class="img-fluid mx-auto d-block justify-content-center" alt="suomikalastus.fi logo" height="150" width="150" >
+      </div>
+</Header>
       <hr>
       <div class="row">
-        <div class="side">
-          <h3 class="mt-4">Kalastusmuotoja</h3>
-          <ul class="nav nav-pills flex-column">
+        <div class="side grad1">
+          <h2>Kalastusmuotoja</h2>
+          <ul class="nav pill-nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Heittokalastus</a>
+              <a class="nav-link" href="#heittokalastus">Heittokalastus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Perhokalastus</a>
+              <a class="nav-link" href="#perhokalastus">Perhokalastus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Verkkokalastus</a>
+              <a class="nav-link" href="#verkkokalastus">Verkkokalastus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Jigikalastus</a>
+              <a class="nav-link" href="#jigikalastus">Jigikalastus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vetouistelu</a>
+              <a class="nav-link" href="#vetouistelu">Vetouistelu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pilkintä</a>
+              <a class="nav-link" href="#pilkintä">Pilkintä</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Onginta</a>
+              <a class="nav-link" href="#onginta">Onginta</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ravustus</a>
+              <a class="nav-link" href="#ravustus">Ravustus</a>
             </li>
           </ul>
+          <div class="box">
+            <div class="item1"><img src="mainoskuva3.jpeg" alt="myydään mainostilaa" class="imagepad">
+            </div>
+            <div class="item2"><img src="mainoskuva2.jpeg" alt="myydään mainostilaa" class="imagepad">
+        </div>
+        </div>
       </div> 
         <div class="main">
           <button onclick="topFunction()" id="myBtn" title="Palaa alkuun">Palaa Alkuun</button>
           <h2>Kalastusmuotoja</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-
-          <p>Some text..</p>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="sintti.jpeg" alt="Kuvaa miehestä pilkillä" width="500" height="650">
+          <h4>Yleinen kuvaus kalastusmuodoista</h4>
           <p>Kalastusmuotoja on monenlaisia ja suomen vuodenajat vaikuttavat tarjolla oleviin vaihtoehtoihin. Kaikista yksinkertaisin kalastusmuoto on onkikalastus, joka ei vaadi erillistä lupaa, ja sopii aloitteleville kalastajille mainiosti. Ongella voi kalastaa silloin kun vesistöt eivät ole jäätyneet. Talvisin jäiden ollessa tarpeeksi paksut, voi kalastaa pilkillä, joka on ongen tapainen väline, mutta paljon lyhyempi ja siinä on kela.</p>
           <br>
-          <h2>Heittokalastus</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="heittokalastus">Heittokalastus</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="virveli.jpg" alt="Kuva heittokalastuksesta" width="400" height="400">
+          <h4>Kuvaus heittokalastuksesta</h4>
           <p>Suomessa on suotuisat olosuhteet heittokalastukselle, ja tässä lajissa on etuna, että tärpin tuntee nopeasti, jotta voi tehdä vastaiskun. Tällä kalastusmuodolla kalastetaan esimerkiksi ahventa, kuhaa, taimenta, haukea ja harjusta. Heittokalastusta voi tehdä missä vain matalissa vesissä, joita suomessa löytyy paljon.</p>
-          <h2>Perhokalastus</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="perhokalastus">Perhokalastus</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="Kalastusopas.jpg" alt="Kuva perhokalastuksesta" width="500" height="400">
+          <h4>Kuvaus perhokalastuksesta</h4>
           <p>Perhokalastus on vanha kalastusmuoto, joka sopii mainiosti Suomen vesistöihin, kuten jokiin ja järviin.
             Syöttinä käytetään keinotekoisia perhoja, jotka muistuttavat hyönteistä ja ovat erittäin kevyitä, jonka takia siima on hieman painavampaa, jotta sitä voi heittää. Perhokalastuksessa kalastaja menee monesti veteen itse seisomaan vettä pitävillä haalareilla. Tavallisimpia saalislajeja tällä kalastusmuodolla ovat pinnalta syövät kalalajit, kuten taimen ja harjus.
             </p>
-          <h2>Verkkokalastus</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="verkkokalastus">Verkkokalastus</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="kalastusmuoto1.jpg" alt="Kuva verkon nostamisesta" width="500" height="400">
+          <h4>Kuvaus verkkokalastuksesta</h4>
           <p>Verkkokalastuksessa lasketaan vesistöön verkko, jonka tarkoituksena on pyydystää kala verkonsilmään niin, että se jää siihen jumiin. Verkonsilmän koolla tai verkon tyypillä voi määritellä haluamansa saaliin koon. Verkon sijainti merkitään kelluvalla esineellä, jotta sen paikantaa helposti verkkojen nostoa varten. Jos haluaa pyydystää Isoa lahnaa tai haukea, voi käyttää riimuverkkoa, jossa kala ui ensin riimun läpi, jolloin verkko painuu toisen riimun läpi muodostaen pussin, jonne saalis jää kiinni.</p>
-          <h2>Jigikalastus</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="jigikalastus">Jigikalastus</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="Jigi.jpeg" alt="Kuva jigistä" width="400" height="400">
+          <h4>Kuvaus jigikalastuksesta</h4>
           <p>Jigikalastuksessa käytetään samoja välineitä kuin heittokalastuksessa, paitsi syötti, joka on silikoninen ja voi muistuttaa kalaa tai toukkaa. Jigikalastus on aktiivinen kalastusmuoto, jossa kalastaja tekee jatkuvasti liikettä, joka herättää saaliin huomion pohjavesissä. Liike muodostuu vavan nykäisystä ja muutamasta kammen kierroksesta, jonka jälkeen annetaan jigin vajota pohjaan ja toistetaan. Tällä kalastusmenetelmällä voi saada esimerkiksi toutaimia, haukia tai lahnoja. Jigikalastus sopii kaikkiin avovesikausiin.</p>
-          <h2>Vetouistelu</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="vetouistelu">Vetouistelu</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="Kalastusmuodot.jpg" alt="kuva vetouistelusta" width="500" height="400">
+          <h4>Kuvaus vetouistelusta</h4>
           <p>Vetouistelu on suosittu kalastusmuoto Suomen vesistöillä. Veneellä voi vetää perässään useampaa siimaa kerralla, ja ajankohdasta ja sijainnista riippuen saaliita voivat olla mm. hauki, lohi, taimen ja harjus. Vetouisteluvavat ovat tarkoituksella lyhyitä ja jäykkiä ja niissä on herkkä kärki, että saaliin tarttumisen huomaa helposti. Vetouistelua voi tehdä rennosti muutamalla vavalla, tai käyttää useampaa, jolloin joutuu myös tekemään enemmän työtä.</p>
-          <h2>Pilkintä</h2>
-          <h5>Title description, Dec 7, 2017</h5>
+          <h2 id="pilkintä">Pilkintä</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
           <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h4>Kuvaus Pilkkimisestä</h4>
           <p>Useimmiten talvella toteutettava kalastusmuoto, johon ei vaadita erillisiä lupia. Pilkintä on helppoa oikealla varustuksella, mutta voi olla myös vaarallista jäiden pettäessä. Pilkkiminen voi olla rentouttava tapa tyhjentää mieli arjen kiireiltä tai se voi myös olla kilpailumuoto, jos kaipaa haasteita.</p>
-          <h2>Onginta</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="onginta">Onginta</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="onkiminen.jpg" alt="Kuva ongenkohosta" width="500" height="400">
+          <img src="onkiminen2.jpg" alt="Kuva onkimisesta" width="500" height="700">
+          <h4>Kuvaus onkimisesta</h4>
           <p>Suomessa suosituin kalastusmuoto, joka ei yleensä vaadi erillistä lupa ja jota voi harjoittaa missä vain vesistön äärellä, esimerkiksi mökkilaiturilla järven rannalla. Onginnassa yleisimpiä saalislajeja on särkikalat, mutta ongella voi myös pyydystää ahvenia ja saada saaliiksi jopa ankeriaita.</p>
-          <h2>Ravustus</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <img src="icefishing.jpg" alt="Kuvaa miehestä pilkillä" width="400" height="400">
-          <p>Some text..</p>
+          <h2 id="ravustus">Ravustus</h2>
+          <h5>Päivitetty: 29.11.2021</h5>
+          <img src="ravustus.jpg" alt="Kuva rapumerroista" width="500" height="400">
+          <h4>Kuvaus ravustuksesta</h4>
           <p>Ravustuksessa käytetään mertoja, jotka laitetaan vesistöihin ravustuskautena. Merrassa käytetään syöttinä esimerkiksi särkikaloja, mutta muutkin kalalajit kelpaavat syötiksi. Suomessa esiintyy mm. täplärapua, joka viihtyy suojaisissa paikoissa, kuten kaatuneiden puiden vierustalla ja lumpeenlehtien seassa. Paras ravunpyyntisyvyys sijaitsee 3–6 metrin syvyydessä, mutta matalammastakin vedestä voi saada saalista.</p>
         </div>
       </div>
           <div class="row">
-            <div class="col-sm-12"></div>
+            <div class="col-sm-12">
+            </div>
           </div>
-      </div>
       <hr>
-      <footer class="row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-4 text-center"><address><!-- Auto Updating Copyright Script created with Rapid Purple Webmaster Tools (http://rapidpurple.com). -->
-          <script language="JavaScript">
-          
-          function y2k(number) { return (number < 1000) ? number + 1900 : number; }
-          var today = new Date();
-          var year = y2k(today.getYear());
-          document.write('© '+year+' Jenny-Carolina Halonen - All Rights Reserved');
-          
-          </script></address></div>
-        <div class="col-sm-4 text-end">
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-tumblr"></ion-icon>
-      <ion-icon name="mail-outline"></ion-icon>
-    </div>
+      <footer class="container-fluid p-3 grad">
+        <!-- Auto Updating Copyright Script created with Rapid Purple Webmaster Tools (http://rapidpurple.com). -->
+          <script>
+            function y2k(number) { return (number < 1000) ? number + 1900 : number; }
+            var today = new Date();
+            var year = y2k(today.getYear());
+            document.write('© '+year+' Jenny-Carolina Halonen - All Rights Reserved');
+          </script>
     </footer>
-    <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
+      <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
         }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</Body>
-</html>
-  
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </Body>
+    </html>
